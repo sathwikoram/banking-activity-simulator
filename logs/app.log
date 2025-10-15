@@ -1,0 +1,877 @@
+2025-09-25 13:50:12 INFO  log:170 - Logging initialized @714ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 13:50:12 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 13:50:12 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 13:50:12 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-25 13:50:12 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 13:50:12 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 13:50:12 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 13:50:12 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-25 22:23:37 INFO  log:170 - Logging initialized @1579ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 22:23:37 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 22:23:37 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 22:23:37 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-25 22:23:37 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 22:23:37 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 22:23:37 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 22:23:38 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-25 23:21:08 INFO  log:170 - Logging initialized @637ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 23:21:08 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 23:21:08 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 23:21:08 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-25 23:21:08 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 23:21:08 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 23:21:08 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 23:21:08 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-25 23:44:43 INFO  log:170 - Logging initialized @623ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 23:44:43 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 23:44:43 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 23:44:43 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-25 23:44:43 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 23:44:43 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 23:44:43 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 23:44:43 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-25 23:50:01 INFO  log:170 - Logging initialized @663ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 23:50:01 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 23:50:01 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 23:50:01 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-25 23:50:01 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 23:50:01 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 23:50:01 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 23:50:01 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-25 23:52:56 INFO  log:170 - Logging initialized @631ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 23:52:56 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 23:52:56 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 23:52:56 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-25 23:52:57 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 23:52:57 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 23:52:57 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 23:52:57 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-25 23:55:19 INFO  log:170 - Logging initialized @636ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 23:55:19 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 23:55:19 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 23:55:19 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-25 23:55:19 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 23:55:19 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 23:55:19 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 23:55:20 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-25 23:55:51 INFO  log:170 - Logging initialized @682ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 23:55:52 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 23:55:52 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 23:55:52 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-25 23:55:52 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 23:55:52 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 23:55:52 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 23:55:52 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-26 00:07:14 INFO  log:170 - Logging initialized @651ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 00:07:14 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 00:07:14 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-26 00:07:14 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 00:07:14 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 00:07:14 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 00:07:14 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-26 00:07:14 INFO  AbstractConnector:333 - Started ServerConnector@623b16c1{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-26 00:07:14 INFO  Server:415 - Started @822ms
+2025-09-26 00:10:34 INFO  log:170 - Logging initialized @645ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 00:10:34 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 00:10:34 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 00:10:34 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 00:10:34 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 00:10:34 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 00:10:34 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 00:10:34 INFO  AbstractConnector:333 - Started ServerConnector@623b16c1{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-26 00:10:34 INFO  Server:415 - Started @815ms
+2025-09-26 00:15:47 INFO  log:170 - Logging initialized @630ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 00:15:47 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 00:15:47 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 00:15:47 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 00:15:47 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 00:15:47 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 00:15:47 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-26 00:15:48 INFO  AbstractConnector:333 - Started ServerConnector@623b16c1{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-26 00:15:48 INFO  Server:415 - Started @796ms
+2025-09-26 00:34:37 INFO  log:170 - Logging initialized @623ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 00:34:37 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 00:34:37 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 00:34:37 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 00:34:37 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 00:34:37 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 00:34:37 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 00:34:37 INFO  AbstractConnector:333 - Started ServerConnector@1bbe5b0f{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-26 00:34:37 INFO  Server:415 - Started @790ms
+2025-09-26 00:37:01 INFO  log:170 - Logging initialized @718ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 00:37:01 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 00:37:01 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 00:37:01 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 00:37:01 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 00:37:01 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 00:37:01 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 00:37:01 INFO  AbstractConnector:333 - Started ServerConnector@623b16c1{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-26 00:37:01 INFO  Server:415 - Started @901ms
+2025-09-26 17:32:26 INFO  log:170 - Logging initialized @1608ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 17:32:26 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 17:32:26 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 17:32:26 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 17:32:26 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 17:32:26 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 17:32:26 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 17:32:26 INFO  AbstractConnector:333 - Started ServerConnector@1bbe5b0f{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-26 17:32:26 INFO  Server:415 - Started @2014ms
+2025-09-26 19:15:22 INFO  log:170 - Logging initialized @837ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 19:15:22 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 19:15:22 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 19:15:22 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 19:15:22 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 19:15:22 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 19:15:22 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-26 19:15:22 INFO  AbstractConnector:333 - Started ServerConnector@1bbe5b0f{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-26 19:15:22 INFO  Server:415 - Started @1096ms
+2025-09-26 20:28:25 INFO  log:170 - Logging initialized @689ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 20:28:25 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 20:28:25 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 20:28:25 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 20:28:25 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 20:28:25 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 20:28:25 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 20:28:25 INFO  AbstractConnector:333 - Started ServerConnector@609fe390{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-26 20:28:25 INFO  Server:415 - Started @860ms
+2025-09-26 21:13:12 INFO  log:170 - Logging initialized @1154ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 21:13:12 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 21:13:12 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 21:13:12 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-26 21:13:13 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 21:13:13 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 21:13:13 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 21:13:13 INFO  AbstractConnector:333 - Started ServerConnector@609fe390{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-26 21:13:13 INFO  Server:415 - Started @1441ms
+2025-09-29 14:56:04 INFO  log:170 - Logging initialized @1242ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-29 14:56:05 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-29 14:56:05 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-29 14:56:05 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-29 14:56:05 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-29 14:56:05 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-29 14:56:05 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-29 14:56:05 INFO  AbstractConnector:333 - Started ServerConnector@609fe390{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-29 14:56:05 INFO  Server:415 - Started @1633ms
+2025-09-30 18:12:19 INFO  log:170 - Logging initialized @766ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 18:12:19 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 18:12:19 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 18:12:19 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 18:12:19 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 18:12:19 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 18:12:19 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 18:12:19 INFO  AbstractConnector:333 - Started ServerConnector@609fe390{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 18:12:19 INFO  Server:415 - Started @940ms
+2025-09-30 18:45:40 INFO  log:170 - Logging initialized @672ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 18:45:40 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 18:45:40 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 18:45:40 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 18:45:40 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 18:45:40 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 18:45:40 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 18:45:40 INFO  AbstractConnector:333 - Started ServerConnector@3f40e338{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 18:45:40 INFO  Server:415 - Started @841ms
+2025-09-30 19:13:21 INFO  log:170 - Logging initialized @730ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 19:13:21 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 19:13:21 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 19:13:21 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 19:13:21 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 19:13:21 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 19:13:21 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 19:13:21 INFO  AbstractConnector:333 - Started ServerConnector@f89d89a{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 19:13:21 INFO  Server:415 - Started @891ms
+2025-09-30 20:00:13 INFO  log:170 - Logging initialized @664ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 20:00:13 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 20:00:13 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 20:00:13 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 20:00:13 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 20:00:13 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 20:00:13 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-30 20:00:13 INFO  AbstractConnector:333 - Started ServerConnector@3f40e338{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 20:00:13 INFO  Server:415 - Started @819ms
+2025-09-30 20:09:10 ERROR GeneralError:55 - 
+java.lang.NumberFormatException: For input string: "<74>"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Long.parseLong(Long.java:709) ~[?:?]
+	at java.base/java.lang.Long.parseLong(Long.java:832) ~[?:?]
+	at com.banking.Main.lambda$main$3(Main.java:77) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-09-30 20:15:09 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '1992-11-25' as SQL Date; at path $.dob
+	at com.google.gson.internal.sql.SqlDateTypeAdapter.read(SqlDateTypeAdapter.java:67) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.sql.SqlDateTypeAdapter.read(SqlDateTypeAdapter.java:39) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Unparseable date: "1992-11-25"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:399) ~[?:?]
+	at com.google.gson.internal.sql.SqlDateTypeAdapter.read(SqlDateTypeAdapter.java:63) ~[gson-2.10.1.jar:?]
+	... 31 more
+2025-09-30 20:18:22 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as SQL Date; at path $.dob
+	at com.google.gson.internal.sql.SqlDateTypeAdapter.read(SqlDateTypeAdapter.java:67) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.sql.SqlDateTypeAdapter.read(SqlDateTypeAdapter.java:39) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Unparseable date: "725846400000"
+	at java.base/java.text.DateFormat.parse(DateFormat.java:399) ~[?:?]
+	at com.google.gson.internal.sql.SqlDateTypeAdapter.read(SqlDateTypeAdapter.java:63) ~[gson-2.10.1.jar:?]
+	... 31 more
+2025-09-30 21:01:47 INFO  log:170 - Logging initialized @1686ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 21:01:47 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 21:01:47 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 21:01:47 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 21:01:47 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 21:01:47 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 21:01:47 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 21:01:47 INFO  AbstractConnector:333 - Started ServerConnector@7dfde826{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 21:01:47 INFO  Server:415 - Started @2036ms
+2025-09-30 21:01:58 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+2025-09-30 21:09:24 INFO  MatcherFilter:167 - The requested route [/accounts%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-30 21:09:39 INFO  MatcherFilter:167 - The requested route [/accounts%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-30 21:14:47 INFO  log:170 - Logging initialized @1213ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 21:14:47 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 21:14:47 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 21:14:47 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 21:14:47 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 21:14:47 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 21:14:47 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 21:14:47 INFO  AbstractConnector:333 - Started ServerConnector@7dfde826{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 21:14:47 INFO  Server:415 - Started @1443ms
+2025-09-30 21:21:01 INFO  log:170 - Logging initialized @930ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 21:21:01 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 21:21:01 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 21:21:01 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 21:21:01 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 21:21:01 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 21:21:01 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-30 21:21:02 INFO  AbstractConnector:333 - Started ServerConnector@6bcbf641{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 21:21:02 INFO  Server:415 - Started @1164ms
+2025-09-30 22:40:36 INFO  log:170 - Logging initialized @1223ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 22:40:36 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 22:40:36 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 22:40:36 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 22:40:36 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 22:40:36 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 22:40:36 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 22:40:36 INFO  AbstractConnector:333 - Started ServerConnector@6bcbf641{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 22:40:36 INFO  Server:415 - Started @1620ms
+2025-09-30 23:10:05 INFO  log:170 - Logging initialized @724ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 23:10:05 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 23:10:05 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 23:10:05 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 23:10:05 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 23:10:05 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 23:10:05 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 23:10:05 INFO  AbstractConnector:333 - Started ServerConnector@3b627c12{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 23:10:05 INFO  Server:415 - Started @892ms
+2025-09-30 23:29:58 INFO  log:170 - Logging initialized @679ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 23:29:58 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 23:29:58 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 23:29:58 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 23:29:58 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 23:29:58 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 23:29:58 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-30 23:29:58 INFO  AbstractConnector:333 - Started ServerConnector@3b627c12{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 23:29:58 INFO  Server:415 - Started @848ms
+2025-09-30 23:42:11 INFO  log:170 - Logging initialized @651ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 23:42:11 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 23:42:11 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 23:42:11 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-09-30 23:42:11 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 23:42:11 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 23:42:11 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 23:42:11 INFO  AbstractConnector:333 - Started ServerConnector@619803b6{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 23:42:11 INFO  Server:415 - Started @821ms
+2025-10-01 00:04:49 INFO  log:170 - Logging initialized @647ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 00:04:49 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 00:04:49 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 00:04:49 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 00:04:49 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 00:04:49 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 00:04:49 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 00:04:49 INFO  AbstractConnector:333 - Started ServerConnector@619803b6{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 00:04:49 INFO  Server:415 - Started @815ms
+2025-10-01 00:13:33 INFO  log:170 - Logging initialized @652ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 00:13:33 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 00:13:33 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 00:13:33 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 00:13:33 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 00:13:33 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 00:13:33 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-01 00:13:33 INFO  AbstractConnector:333 - Started ServerConnector@136aac65{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 00:13:33 INFO  Server:415 - Started @812ms
+2025-10-01 00:17:49 INFO  log:170 - Logging initialized @616ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 00:17:49 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 00:17:49 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 00:17:49 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 00:17:49 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 00:17:49 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 00:17:49 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 00:17:49 INFO  AbstractConnector:333 - Started ServerConnector@136aac65{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 00:17:49 INFO  Server:415 - Started @778ms
+2025-10-01 11:51:51 INFO  log:170 - Logging initialized @1272ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 11:51:52 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 11:51:52 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 11:51:52 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 11:51:52 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 11:51:52 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 11:51:52 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 11:51:52 INFO  AbstractConnector:333 - Started ServerConnector@136aac65{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 11:51:52 INFO  Server:415 - Started @1667ms
+2025-10-01 12:09:04 INFO  log:170 - Logging initialized @1457ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 12:09:04 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 12:09:04 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 12:09:04 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 12:09:05 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 12:09:05 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 12:09:05 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-01 12:09:05 INFO  AbstractConnector:333 - Started ServerConnector@23158467{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 12:09:05 INFO  Server:415 - Started @1808ms
+2025-10-01 12:20:47 INFO  log:170 - Logging initialized @1134ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 12:20:47 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 12:20:47 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 12:20:47 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 12:20:47 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 12:20:47 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 12:20:47 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-01 12:20:47 INFO  AbstractConnector:333 - Started ServerConnector@4ef4c329{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 12:20:47 INFO  Server:415 - Started @1402ms
+2025-10-01 12:25:32 INFO  log:170 - Logging initialized @1078ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 12:25:32 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 12:25:32 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 12:25:32 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 12:25:32 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 12:25:32 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 12:25:32 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 12:25:32 INFO  AbstractConnector:333 - Started ServerConnector@7feb23f2{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 12:25:32 INFO  Server:415 - Started @1345ms
+2025-10-01 12:43:18 INFO  log:170 - Logging initialized @721ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 12:43:18 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 12:43:18 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 12:43:18 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 12:43:18 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 12:43:18 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 12:43:18 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 12:43:18 INFO  AbstractConnector:333 - Started ServerConnector@28e261e0{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 12:43:18 INFO  Server:415 - Started @877ms
+2025-10-01 13:12:45 INFO  log:170 - Logging initialized @747ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 13:12:45 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 13:12:45 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 13:12:45 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 13:12:45 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 13:12:45 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 13:12:45 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-01 13:12:45 INFO  AbstractConnector:333 - Started ServerConnector@4e71c043{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 13:12:45 INFO  Server:415 - Started @911ms
+2025-10-01 13:35:20 INFO  log:170 - Logging initialized @644ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 13:35:20 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 13:35:20 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 13:35:20 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 13:35:20 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 13:35:20 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 13:35:20 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 13:35:20 INFO  AbstractConnector:333 - Started ServerConnector@4e71c043{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 13:35:20 INFO  Server:415 - Started @808ms
+2025-10-01 13:45:16 INFO  log:170 - Logging initialized @618ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 13:45:16 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 13:45:16 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 13:45:16 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 13:45:16 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 13:45:16 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 13:45:16 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 13:45:16 INFO  AbstractConnector:333 - Started ServerConnector@4e71c043{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 13:45:16 INFO  Server:415 - Started @779ms
+2025-10-01 13:53:19 INFO  log:170 - Logging initialized @623ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 13:53:19 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 13:53:19 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 13:53:19 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 13:53:20 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 13:53:20 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 13:53:20 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 13:53:20 INFO  AbstractConnector:333 - Started ServerConnector@4e71c043{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 13:53:20 INFO  Server:415 - Started @773ms
+2025-10-01 17:26:34 INFO  log:170 - Logging initialized @1307ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 17:26:34 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 17:26:34 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 17:26:34 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 17:26:34 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 17:26:34 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 17:26:34 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-01 17:26:34 INFO  AbstractConnector:333 - Started ServerConnector@4e71c043{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 17:26:34 INFO  Server:415 - Started @1824ms
+2025-10-01 18:07:46 INFO  log:170 - Logging initialized @1318ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 18:07:46 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 18:07:46 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 18:07:46 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 18:07:46 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 18:07:46 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 18:07:46 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-01 18:07:46 INFO  AbstractConnector:333 - Started ServerConnector@4e71c043{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 18:07:46 INFO  Server:415 - Started @1594ms
+2025-10-01 18:09:23 INFO  log:170 - Logging initialized @1463ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 18:09:23 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 18:09:23 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 18:09:23 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 18:09:23 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 18:09:23 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 18:09:23 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-01 18:09:23 INFO  AbstractConnector:333 - Started ServerConnector@4e71c043{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 18:09:23 INFO  Server:415 - Started @1805ms
+2025-10-01 20:18:09 INFO  log:170 - Logging initialized @1256ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-01 20:18:09 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-01 20:18:09 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-01 20:18:09 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-01 20:18:09 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-01 20:18:09 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-01 20:18:09 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-01 20:18:09 INFO  AbstractConnector:333 - Started ServerConnector@28e261e0{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-01 20:18:09 INFO  Server:415 - Started @1627ms
+2025-10-03 19:17:59 INFO  log:170 - Logging initialized @1566ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-03 19:17:59 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-03 19:17:59 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-03 19:17:59 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-03 19:17:59 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-03 19:17:59 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-03 19:17:59 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-03 19:17:59 INFO  AbstractConnector:333 - Started ServerConnector@28e261e0{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-03 19:17:59 INFO  Server:415 - Started @1878ms
+2025-10-03 20:20:02 INFO  log:170 - Logging initialized @1004ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-03 20:20:02 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-03 20:20:02 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-03 20:20:02 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-03 20:20:02 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-03 20:20:02 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-03 20:20:02 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-03 20:20:02 INFO  AbstractConnector:333 - Started ServerConnector@4e71c043{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-03 20:20:02 INFO  Server:415 - Started @1194ms
+2025-10-06 20:15:50 INFO  log:170 - Logging initialized @779ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-06 20:15:50 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-06 20:15:50 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-06 20:15:50 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-06 20:15:50 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-06 20:15:50 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-06 20:15:50 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-06 20:15:50 INFO  AbstractConnector:333 - Started ServerConnector@2b7aa0f{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-06 20:15:50 INFO  Server:415 - Started @948ms
+2025-10-07 20:29:36 INFO  log:170 - Logging initialized @1696ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-07 20:29:36 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-07 20:29:36 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-07 20:29:36 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-07 20:29:36 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-07 20:29:36 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-07 20:29:36 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-07 20:29:37 INFO  AbstractConnector:333 - Started ServerConnector@10453eb7{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-07 20:29:37 INFO  Server:415 - Started @2165ms
+2025-10-08 17:10:05 INFO  log:170 - Logging initialized @1328ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-08 17:10:05 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-08 17:10:05 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-08 17:10:05 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-08 17:10:05 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-08 17:10:05 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-08 17:10:05 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-08 17:10:05 INFO  AbstractConnector:333 - Started ServerConnector@12e635b7{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-08 17:10:05 INFO  Server:415 - Started @1795ms
+2025-10-08 17:16:53 INFO  log:170 - Logging initialized @1473ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-08 17:16:53 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-08 17:16:53 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-08 17:16:53 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-08 17:16:53 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-08 17:16:53 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-08 17:16:53 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-08 17:16:53 INFO  AbstractConnector:333 - Started ServerConnector@12e635b7{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-08 17:16:53 INFO  Server:415 - Started @1816ms
+2025-10-08 17:21:26 INFO  log:170 - Logging initialized @2557ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-08 17:21:26 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-08 17:21:26 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-08 17:21:26 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-08 17:21:26 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-08 17:21:26 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-08 17:21:26 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-08 17:21:26 INFO  AbstractConnector:333 - Started ServerConnector@24e95b0d{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-08 17:21:26 INFO  Server:415 - Started @3202ms
+2025-10-08 18:38:01 INFO  log:170 - Logging initialized @711ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-08 18:38:01 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-08 18:38:01 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-08 18:38:01 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-08 18:38:01 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-08 18:38:01 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-08 18:38:01 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-08 18:38:01 INFO  AbstractConnector:333 - Started ServerConnector@10453eb7{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-08 18:38:01 INFO  Server:415 - Started @885ms
+2025-10-08 18:38:16 INFO  MatcherFilter:167 - The requested route [/transactions/export/excel] has not been mapped in Spark for Accept: [*/*]
+2025-10-08 18:42:50 INFO  log:170 - Logging initialized @642ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-08 18:42:50 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-08 18:42:50 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-08 18:42:50 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-08 18:42:50 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-08 18:42:50 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-08 18:42:50 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-08 18:42:50 INFO  AbstractConnector:333 - Started ServerConnector@774b5e86{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-08 18:42:50 INFO  Server:415 - Started @790ms
+2025-10-08 19:12:35 INFO  log:170 - Logging initialized @1056ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-08 19:12:35 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-08 19:12:35 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-08 19:12:35 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-08 19:12:35 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-08 19:12:35 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-08 19:12:35 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-08 19:12:35 INFO  AbstractConnector:333 - Started ServerConnector@12e635b7{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-08 19:12:35 INFO  Server:415 - Started @1370ms
+2025-10-08 20:48:17 INFO  log:170 - Logging initialized @1203ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-08 20:48:17 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-08 20:48:17 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-08 20:48:17 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-08 20:48:17 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-08 20:48:17 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-08 20:48:17 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-08 20:48:17 INFO  AbstractConnector:333 - Started ServerConnector@5e323647{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-08 20:48:17 INFO  Server:415 - Started @1586ms
+2025-10-08 21:18:54 INFO  log:170 - Logging initialized @876ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-08 21:18:55 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-08 21:18:55 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-08 21:18:55 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-08 21:18:55 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-08 21:18:55 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-08 21:18:55 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-08 21:18:55 INFO  AbstractConnector:333 - Started ServerConnector@5e323647{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-08 21:18:55 INFO  Server:415 - Started @1045ms
+2025-10-12 20:34:17 INFO  log:170 - Logging initialized @1690ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-12 20:34:17 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-12 20:34:17 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-12 20:34:17 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-12 20:34:17 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-12 20:34:17 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-12 20:34:17 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-12 20:34:17 INFO  AbstractConnector:333 - Started ServerConnector@1d91ce93{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-12 20:34:18 INFO  Server:415 - Started @2120ms
+2025-10-12 22:22:52 INFO  log:170 - Logging initialized @1844ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-12 22:22:52 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-12 22:22:52 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-12 22:22:52 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-12 22:22:52 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-12 22:22:52 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-12 22:22:52 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-12 22:22:52 INFO  AbstractConnector:333 - Started ServerConnector@474d06a9{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-12 22:22:52 INFO  Server:415 - Started @2354ms
+2025-10-12 23:44:53 INFO  log:170 - Logging initialized @1379ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-12 23:44:53 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-12 23:44:53 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-12 23:44:53 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-12 23:44:53 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-12 23:44:53 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-12 23:44:53 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-12 23:44:53 INFO  AbstractConnector:333 - Started ServerConnector@74491e40{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-12 23:44:53 INFO  Server:415 - Started @1689ms
+2025-10-12 23:45:06 INFO  MatcherFilter:167 - The requested route [/] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+2025-10-12 23:45:06 INFO  MatcherFilter:167 - The requested route [/favicon.ico] has not been mapped in Spark for Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+2025-10-13 00:15:33 INFO  log:170 - Logging initialized @1560ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-13 00:15:33 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-13 00:15:33 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-13 00:15:33 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-13 00:15:33 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-13 00:15:33 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-13 00:15:33 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-13 00:15:33 INFO  AbstractConnector:333 - Started ServerConnector@1d91ce93{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-13 00:15:33 INFO  Server:415 - Started @1904ms
+2025-10-14 16:13:01 INFO  log:170 - Logging initialized @4562ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-14 16:13:01 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-14 16:13:01 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-14 16:13:01 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-14 16:13:02 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-14 16:13:02 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-14 16:13:02 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-14 16:13:02 INFO  AbstractConnector:333 - Started ServerConnector@74491e40{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-14 16:13:02 INFO  Server:415 - Started @5721ms
+2025-10-14 17:26:34 INFO  log:170 - Logging initialized @1495ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-14 17:26:34 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-14 17:26:34 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-14 17:26:34 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-14 17:26:34 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-14 17:26:34 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-14 17:26:34 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-14 17:26:34 INFO  AbstractConnector:333 - Started ServerConnector@74491e40{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-14 17:26:34 INFO  Server:415 - Started @1695ms
+2025-10-14 19:37:35 INFO  log:170 - Logging initialized @806ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-14 19:37:35 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-14 19:37:35 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-14 19:37:35 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-14 19:37:35 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-14 19:37:35 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-14 19:37:35 INFO  session:132 - node0 Scavenging every 600000ms
+2025-10-14 19:37:35 INFO  AbstractConnector:333 - Started ServerConnector@76d28b15{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-14 19:37:35 INFO  Server:415 - Started @955ms
+2025-10-14 20:36:30 INFO  log:170 - Logging initialized @2285ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-14 20:36:30 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-10-14 20:36:30 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-10-14 20:36:30 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.8+9-LTS
+2025-10-14 20:36:30 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-10-14 20:36:30 INFO  session:339 - No SessionScavenger set, using defaults
+2025-10-14 20:36:30 INFO  session:132 - node0 Scavenging every 660000ms
+2025-10-14 20:36:31 INFO  AbstractConnector:333 - Started ServerConnector@2b89f494{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-10-14 20:36:31 INFO  Server:415 - Started @2686ms
