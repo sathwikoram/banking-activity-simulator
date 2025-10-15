@@ -79,10 +79,9 @@ const BankingDashboard = () => {
             fileLink.click();
             document.body.removeChild(fileLink);
             window.URL.revokeObjectURL(fileURL);
-
-            setMessage('✅ Download successful!');
+            setMessage(' Download successful!');
         } catch (err) {
-            setMessage('❌ Download failed');
+            setMessage(' Download failed');
             console.error('Download error:', err);
         }
     };
@@ -114,9 +113,9 @@ const BankingDashboard = () => {
             const payload = { ...customerForm, dob: dobTimestamp };
 
             const res = await axios.post("http://localhost:8081/customers", payload);
-            setMessage(`✅ Customer created with ID: ${res.data.id}`);
+            setMessage(` Customer created with ID: ${res.data.id}`);
         } catch (err) {
-            setMessage(`❌ Customer creation failed: ${err.response.data.error}`);
+            setMessage(` Customer creation failed: ${err.response.data.error}`);
             console.error(err);
         }
     };
@@ -125,10 +124,10 @@ const BankingDashboard = () => {
         e.preventDefault();
         try {
             const res = await axios.post("http://localhost:8081/accounts", accountForm);
-            setMessage(`✅ Account created with ID: ${res.data.id}`);
+            setMessage(` Account created with ID: ${res.data.id}`);
             fetchTransactions();
         } catch (err) {
-            setMessage("❌ Account creation failed");
+            setMessage(" Account creation failed");
             console.error(err);
         }
     };
@@ -137,10 +136,10 @@ const BankingDashboard = () => {
         e.preventDefault();
         try {
             await axios.post('http://localhost:8081/transactions/depositWithdrawByAccountNumber', transactionForm);
-            setMessage('✅ Transaction successful!');
+            setMessage(' Transaction successful!');
             fetchTransactions();
         } catch (err) {
-            setMessage('❌ Transaction failed');
+            setMessage(' Transaction failed');
             console.error(err);
         }
     };
@@ -149,10 +148,10 @@ const BankingDashboard = () => {
         e.preventDefault();
         try {
             await axios.post('http://localhost:8081/transactions/transferByAccountNumber', transferForm);
-            setMessage('✅ Transfer successful!');
+            setMessage(' Transfer successful!');
             fetchTransactions();
         } catch (err) {
-            setMessage('❌ Transfer failed');
+            setMessage(' Transfer failed');
             console.error(err);
         }
     };
