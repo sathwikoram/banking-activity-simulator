@@ -1,0 +1,85 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.App {
+  padding: 20px;
+}
+
+.main-title {
+  text-align: center;
+  color: #004d99;
+  font-size: 2.5rem;
+}
+
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-navigation button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.tab-navigation button.active {
+  background-color: #004d99;
+  color: #fff;
+  border-color: #004d99;
+}
+
+.form-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-section h2 {
+  color: #333;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #f0f2f5;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.form-grid input,
+.form-grid select,
+.form-section button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-grid button {
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  grid-column: 1 / -1;
+}
+
+.status-message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}

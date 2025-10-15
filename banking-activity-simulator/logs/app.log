@@ -1,0 +1,1389 @@
+2025-08-21 19:55:45 INFO  App:10 - 🚀 Banking Activity Simulator Started!
+2025-08-21 19:55:45 WARN  App:11 - ⚠ This is a warning log
+2025-08-21 19:55:45 ERROR App:12 - ❌ This is an error log
+2025-08-22 17:43:00 INFO  App:10 - 🚀 Banking Activity Simulator Started!
+2025-08-22 17:43:00 WARN  App:11 - ⚠ This is a warning log
+2025-08-22 17:43:00 ERROR App:12 - ❌ This is an error log
+2025-09-08 16:01:19 INFO  log:170 - Logging initialized @2514ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-08 16:01:19 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-08 16:01:19 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-08 16:01:19 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-08 16:01:19 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-08 16:01:19 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-08 16:01:19 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-08 16:01:19 INFO  AbstractConnector:333 - Started ServerConnector@5be834a8{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-08 16:01:19 INFO  Server:415 - Started @2637ms
+2025-09-08 16:06:18 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:06:35 INFO  MatcherFilter:167 - The requested route [/Customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:07:34 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:15:21 INFO  log:170 - Logging initialized @2180ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-08 16:15:21 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-08 16:15:21 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-08 16:15:21 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-08 16:15:21 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-08 16:15:21 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-08 16:15:21 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-08 16:15:22 INFO  AbstractConnector:333 - Started ServerConnector@778d6b42{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-08 16:15:22 INFO  Server:415 - Started @2307ms
+2025-09-08 16:17:09 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:21:27 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:22:45 ERROR GeneralError:55 - 
+java.lang.NumberFormatException: For input string: "1
+"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Long.parseLong(Long.java:709) ~[?:?]
+	at java.base/java.lang.Long.parseLong(Long.java:832) ~[?:?]
+	at com.banking.CustomerAPI.lambda$main$1(CustomerAPI.java:22) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-09-08 16:23:13 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:23:46 ERROR GeneralError:55 - 
+java.lang.NumberFormatException: For input string: "1
+"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Long.parseLong(Long.java:709) ~[?:?]
+	at java.base/java.lang.Long.parseLong(Long.java:832) ~[?:?]
+	at com.banking.CustomerAPI.lambda$main$1(CustomerAPI.java:22) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-09-08 16:25:32 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:25:42 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:27:48 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:30:19 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:30:49 INFO  log:170 - Logging initialized @2333ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-08 16:30:50 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-08 16:30:50 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-08 16:30:50 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-08 16:30:50 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-08 16:30:50 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-08 16:30:50 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-08 16:30:50 INFO  AbstractConnector:333 - Started ServerConnector@16a90691{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-08 16:30:50 INFO  Server:415 - Started @2492ms
+2025-09-08 16:30:55 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-08 16:33:03 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-09 20:17:52 INFO  log:170 - Logging initialized @5766ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-09 20:17:52 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-09 20:17:52 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-09 20:17:52 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-09 20:17:52 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-09 20:17:52 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-09 20:17:52 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-09 20:17:52 INFO  AbstractConnector:333 - Started ServerConnector@6a478def{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-09 20:17:52 INFO  Server:415 - Started @6216ms
+2025-09-09 20:20:00 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-09 20:22:50 INFO  MatcherFilter:167 - The requested route [/customers%0A] has not been mapped in Spark for Accept: [*/*]
+2025-09-09 21:06:53 ERROR GeneralError:55 - 
+java.lang.NullPointerException: Cannot invoke "com.banking.model.Customer.setCustomerId(java.lang.Long)" because "c" is null
+	at com.banking.CustomerAPI.lambda$main$3(CustomerAPI.java:40) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-09-09 21:10:34 INFO  MatcherFilter:167 - The requested route [/customers] has not been mapped in Spark for Accept: [*/*]
+2025-09-09 21:13:26 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing 'Jan 15, 2010' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.CustomerAPI.lambda$main$2(CustomerAPI.java:30) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["Jan 15, 2010"]: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 32 more
+Caused by: java.lang.NumberFormatException: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parseInt(ISO8601Utils.java:316) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:133) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 32 more
+2025-09-09 21:13:46 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing 'Jan 15, 2010' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.CustomerAPI.lambda$main$2(CustomerAPI.java:30) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["Jan 15, 2010"]: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+Caused by: java.lang.NumberFormatException: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parseInt(ISO8601Utils.java:316) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:133) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+2025-09-09 21:14:01 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing 'Jan 15, 2010' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.CustomerAPI.lambda$main$2(CustomerAPI.java:30) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["Jan 15, 2010"]: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+Caused by: java.lang.NumberFormatException: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parseInt(ISO8601Utils.java:316) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:133) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+2025-09-09 21:14:49 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing 'Jan 15, 2010' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.CustomerAPI.lambda$main$2(CustomerAPI.java:30) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["Jan 15, 2010"]: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+Caused by: java.lang.NumberFormatException: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parseInt(ISO8601Utils.java:316) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:133) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+2025-09-09 21:15:01 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing 'Jan 15, 2010' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.CustomerAPI.lambda$main$2(CustomerAPI.java:30) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["Jan 15, 2010"]: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+Caused by: java.lang.NumberFormatException: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parseInt(ISO8601Utils.java:316) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:133) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+2025-09-09 21:17:18 INFO  log:170 - Logging initialized @5650ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-09 21:17:18 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-09 21:17:19 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-09 21:17:19 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-09 21:17:19 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-09 21:17:19 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-09 21:17:19 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-09 21:17:19 INFO  AbstractConnector:333 - Started ServerConnector@6a478def{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-09 21:17:19 INFO  Server:415 - Started @5986ms
+2025-09-09 21:29:07 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing 'Jan 15, 2010' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.CustomerAPI.lambda$main$2(CustomerAPI.java:30) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["Jan 15, 2010"]: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 32 more
+Caused by: java.lang.NumberFormatException: Invalid number: Jan 
+	at com.google.gson.internal.bind.util.ISO8601Utils.parseInt(ISO8601Utils.java:316) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:133) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 32 more
+2025-09-09 21:46:34 INFO  log:170 - Logging initialized @2008ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-09 21:46:34 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-09 21:46:34 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-09 21:46:34 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-09 21:46:34 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-09 21:46:34 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-09 21:46:34 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-09 21:46:34 INFO  AbstractConnector:333 - Started ServerConnector@10ea589a{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-09 21:46:34 INFO  Server:415 - Started @2123ms
+2025-09-09 22:09:03 INFO  log:170 - Logging initialized @1924ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-09 22:09:03 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-09 22:09:03 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-09 22:09:03 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-09 22:09:03 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-09 22:09:03 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-09 22:09:03 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-09 22:09:03 INFO  AbstractConnector:333 - Started ServerConnector@10ea589a{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-09 22:09:03 INFO  Server:415 - Started @2027ms
+2025-09-09 22:14:11 INFO  log:170 - Logging initialized @2559ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-09 22:14:11 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-09 22:14:11 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-09 22:14:11 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-09 22:14:11 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-09 22:14:11 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-09 22:14:11 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-09 22:14:11 INFO  AbstractConnector:333 - Started ServerConnector@5369d84b{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-09 22:14:11 INFO  Server:415 - Started @2698ms
+2025-09-09 22:28:55 INFO  log:170 - Logging initialized @2404ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-09 22:28:55 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-09 22:28:55 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-09 22:28:55 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-09 22:28:55 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-09 22:28:55 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-09 22:28:55 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-09 22:28:55 INFO  AbstractConnector:333 - Started ServerConnector@7a7a988d{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-09 22:28:55 INFO  Server:415 - Started @2557ms
+2025-09-10 19:36:34 INFO  log:170 - Logging initialized @6984ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-10 19:36:34 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-10 19:36:34 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-10 19:36:34 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-10 19:36:34 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-10 19:36:34 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-10 19:36:34 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-10 19:36:34 INFO  AbstractConnector:333 - Started ServerConnector@3cc67b6{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-10 19:36:34 INFO  Server:415 - Started @7352ms
+2025-09-10 19:58:16 INFO  log:170 - Logging initialized @6369ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-10 19:58:16 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-10 19:58:16 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-10 19:58:17 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-10 19:58:17 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-10 19:58:17 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-10 19:58:17 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-10 19:58:17 INFO  AbstractConnector:333 - Started ServerConnector@162c43dd{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-10 19:58:17 INFO  Server:415 - Started @6783ms
+2025-09-10 20:04:50 INFO  log:170 - Logging initialized @7618ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-10 20:04:50 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-10 20:04:50 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-10 20:04:50 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-10 20:04:50 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-10 20:04:50 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-10 20:04:50 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-10 20:04:51 INFO  AbstractConnector:333 - Started ServerConnector@1f37f81a{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-10 20:04:51 INFO  Server:415 - Started @7965ms
+2025-09-10 20:26:31 INFO  MatcherFilter:167 - The requested route [/accounts] has not been mapped in Spark for Accept: [*/*]
+2025-09-10 20:45:40 INFO  log:170 - Logging initialized @2151ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-10 20:45:41 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-10 20:45:41 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-10 20:45:41 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-10 20:45:41 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-10 20:45:41 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-10 20:45:41 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-10 20:45:41 INFO  AbstractConnector:333 - Started ServerConnector@1ee16c3e{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-10 20:45:41 INFO  Server:415 - Started @2295ms
+2025-09-10 20:51:15 INFO  MatcherFilter:167 - The requested route [/accounts/3] has not been mapped in Spark for Accept: [*/*]
+2025-09-11 16:30:06 INFO  log:170 - Logging initialized @6071ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-11 16:30:06 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-11 16:30:06 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-11 16:30:06 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-11 16:30:06 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-11 16:30:06 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-11 16:30:06 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-11 16:30:06 INFO  AbstractConnector:333 - Started ServerConnector@6217f962{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-11 16:30:06 INFO  Server:415 - Started @6466ms
+2025-09-11 16:52:46 INFO  log:170 - Logging initialized @6992ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-11 16:52:47 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-11 16:52:47 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-11 16:52:47 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-11 16:52:47 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-11 16:52:47 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-11 16:52:47 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-11 16:52:47 INFO  AbstractConnector:333 - Started ServerConnector@4e633704{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-11 16:52:47 INFO  Server:415 - Started @7316ms
+2025-09-11 16:53:33 INFO  MatcherFilter:167 - The requested route [/transaction] has not been mapped in Spark for Accept: [*/*]
+2025-09-11 17:40:23 INFO  MatcherFilter:167 - The requested route [/transactions] has not been mapped in Spark for Accept: [*/*]
+2025-09-14 14:13:41 INFO  log:170 - Logging initialized @6453ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-14 14:13:41 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-14 14:13:41 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-14 14:13:41 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-14 14:13:41 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-14 14:13:41 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-14 14:13:41 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-14 14:13:41 INFO  AbstractConnector:333 - Started ServerConnector@77e5068d{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-14 14:13:41 INFO  Server:415 - Started @6783ms
+2025-09-14 14:14:35 INFO  MatcherFilter:167 - The requested route [/tra] has not been mapped in Spark for Accept: [*/*]
+2025-09-14 20:23:05 INFO  log:170 - Logging initialized @3845ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-14 20:23:05 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-14 20:23:05 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-14 20:23:05 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-14 20:23:05 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-14 20:23:05 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-14 20:23:05 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-14 20:23:05 INFO  AbstractConnector:333 - Started ServerConnector@abfb0f0{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-14 20:23:05 INFO  Server:415 - Started @3986ms
+2025-09-14 20:24:05 INFO  log:170 - Logging initialized @3836ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-14 20:24:05 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-14 20:24:05 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-14 20:24:05 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-14 20:24:05 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-14 20:24:05 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-14 20:24:05 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-14 20:24:06 INFO  AbstractConnector:333 - Started ServerConnector@21a58655{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-14 20:24:06 INFO  Server:415 - Started @3966ms
+2025-09-14 20:26:08 INFO  MatcherFilter:167 - The requested route [/favicon.ico] has not been mapped in Spark for Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+2025-09-14 20:52:13 INFO  log:170 - Logging initialized @3294ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-14 20:52:13 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-14 20:52:13 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-14 20:52:13 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-14 20:52:13 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-14 20:52:13 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-14 20:52:13 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-14 20:52:13 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-14 20:52:46 INFO  log:170 - Logging initialized @3471ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-14 20:52:46 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-14 20:52:46 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-14 20:52:46 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-14 20:52:47 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-14 20:52:47 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-14 20:52:47 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-14 20:52:47 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-14 20:53:16 INFO  log:170 - Logging initialized @3294ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-14 20:53:16 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-14 20:53:16 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-14 20:53:16 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-14 20:53:16 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-14 20:53:16 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-14 20:53:16 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-14 20:53:16 INFO  AbstractConnector:333 - Started ServerConnector@3bab0ab0{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-14 20:53:16 INFO  Server:415 - Started @3414ms
+2025-09-14 20:56:21 INFO  MatcherFilter:167 - The requested route [/transaction] has not been mapped in Spark for Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+2025-09-15 12:36:56 INFO  log:170 - Logging initialized @3768ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-15 12:36:56 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-15 12:36:56 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-15 12:36:56 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-15 12:36:56 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-15 12:36:56 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-15 12:36:56 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-15 12:36:56 INFO  AbstractConnector:333 - Started ServerConnector@602b1ce0{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-15 12:36:56 INFO  Server:415 - Started @3891ms
+2025-09-15 20:33:59 INFO  log:170 - Logging initialized @9132ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-15 20:33:59 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-15 20:33:59 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-15 20:33:59 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-15 20:33:59 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-15 20:33:59 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-15 20:33:59 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-15 20:34:00 INFO  AbstractConnector:333 - Started ServerConnector@2c0932ac{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-15 20:34:00 INFO  Server:415 - Started @9471ms
+2025-09-16 21:00:14 INFO  log:170 - Logging initialized @4055ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-16 21:00:14 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-16 21:00:14 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-16 21:00:14 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-16 21:00:14 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-16 21:00:14 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-16 21:00:14 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-16 21:00:14 INFO  AbstractConnector:333 - Started ServerConnector@1f5d3884{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-16 21:00:14 INFO  Server:415 - Started @4206ms
+2025-09-17 19:44:01 INFO  log:170 - Logging initialized @10092ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-17 19:44:01 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-17 19:44:01 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-17 19:44:01 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-17 19:44:01 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-17 19:44:01 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-17 19:44:01 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-17 19:44:01 INFO  AbstractConnector:333 - Started ServerConnector@69eb7ea4{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-17 19:44:01 INFO  Server:415 - Started @10329ms
+2025-09-17 19:45:33 INFO  MatcherFilter:167 - The requested route [/transactions] has not been mapped in Spark for Accept: [*/*]
+2025-09-17 19:45:39 INFO  MatcherFilter:167 - The requested route [/transactions] has not been mapped in Spark for Accept: [*/*]
+2025-09-17 20:36:39 INFO  log:170 - Logging initialized @4505ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-17 20:36:39 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-17 20:36:39 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-17 20:36:39 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-17 20:36:39 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-17 20:36:39 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-17 20:36:39 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-17 20:36:39 INFO  AbstractConnector:333 - Started ServerConnector@1f5d3884{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-17 20:36:39 INFO  Server:415 - Started @4652ms
+2025-09-17 20:56:10 INFO  MatcherFilter:167 - The requested route [/transactions/1] has not been mapped in Spark for Accept: [*/*]
+2025-09-17 21:07:51 INFO  log:170 - Logging initialized @4233ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-17 21:07:51 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-17 21:07:51 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-17 21:07:51 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-17 21:07:51 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-17 21:07:51 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-17 21:07:51 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-17 21:07:51 INFO  AbstractConnector:333 - Started ServerConnector@63eff050{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-17 21:07:51 INFO  Server:415 - Started @4375ms
+2025-09-18 16:51:10 INFO  log:170 - Logging initialized @8395ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-18 16:51:10 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-18 16:51:10 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-18 16:51:10 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-18 16:51:10 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-18 16:51:10 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-18 16:51:10 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-18 16:51:10 INFO  AbstractConnector:333 - Started ServerConnector@9a0cf1d{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-18 16:51:10 INFO  Server:415 - Started @8650ms
+2025-09-18 18:51:29 INFO  log:170 - Logging initialized @4458ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-18 18:51:29 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-18 18:51:29 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-18 18:51:29 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-18 18:51:29 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-18 18:51:29 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-18 18:51:29 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-18 18:51:29 INFO  AbstractConnector:333 - Started ServerConnector@74612d83{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-18 18:51:29 INFO  Server:415 - Started @4589ms
+2025-09-18 19:16:48 INFO  log:170 - Logging initialized @4614ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-18 19:16:48 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-18 19:16:48 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-18 19:16:48 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-18 19:16:48 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-18 19:16:48 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-18 19:16:48 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-18 19:16:48 INFO  AbstractConnector:333 - Started ServerConnector@57f6fa57{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-18 19:16:48 INFO  Server:415 - Started @4810ms
+2025-09-18 20:13:17 INFO  log:170 - Logging initialized @9843ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-18 20:13:17 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-18 20:13:17 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-18 20:13:17 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-18 20:13:17 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-18 20:13:17 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-18 20:13:17 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-18 20:13:17 INFO  AbstractConnector:333 - Started ServerConnector@501209a6{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-18 20:13:17 INFO  Server:415 - Started @10220ms
+2025-09-18 20:39:34 INFO  log:170 - Logging initialized @8316ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-18 20:39:35 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-18 20:39:35 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-18 20:39:35 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-18 20:39:35 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-18 20:39:35 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-18 20:39:35 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-18 20:39:35 INFO  AbstractConnector:333 - Started ServerConnector@56d2a625{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-18 20:39:35 INFO  Server:415 - Started @8574ms
+2025-09-22 18:33:12 INFO  log:170 - Logging initialized @12531ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-22 18:33:12 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-22 18:33:12 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-22 18:33:12 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-22 18:33:12 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-22 18:33:12 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-22 18:33:12 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-22 18:33:13 INFO  AbstractConnector:333 - Started ServerConnector@61b4a636{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-22 18:33:13 INFO  Server:415 - Started @12875ms
+2025-09-23 21:32:30 INFO  log:170 - Logging initialized @9225ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-23 21:32:30 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-23 21:32:30 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-23 21:32:30 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-23 21:32:30 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-23 21:32:30 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-23 21:32:30 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-23 21:32:30 INFO  AbstractConnector:333 - Started ServerConnector@3209ac3b{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-23 21:32:30 INFO  Server:415 - Started @9505ms
+2025-09-25 10:49:29 INFO  log:170 - Logging initialized @11778ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 10:49:29 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 10:49:29 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 10:49:29 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 10:49:29 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 10:49:29 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 10:49:29 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 10:49:30 INFO  AbstractConnector:333 - Started ServerConnector@2009743b{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 10:49:30 INFO  Server:415 - Started @12098ms
+2025-09-25 11:24:51 INFO  log:170 - Logging initialized @4703ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 11:24:51 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 11:24:51 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 11:24:51 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 11:24:51 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 11:24:51 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 11:24:51 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 11:24:51 INFO  AbstractConnector:333 - Started ServerConnector@37328a87{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 11:24:51 INFO  Server:415 - Started @4890ms
+2025-09-25 11:26:01 INFO  log:170 - Logging initialized @4294ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 11:26:02 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 11:26:02 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 11:26:02 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 11:26:02 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 11:26:02 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 11:26:02 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 11:26:02 INFO  AbstractConnector:333 - Started ServerConnector@58c35244{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 11:26:02 INFO  Server:415 - Started @4453ms
+2025-09-25 11:42:37 INFO  log:170 - Logging initialized @4338ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 11:42:37 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 11:42:37 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 11:42:37 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 11:42:37 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 11:42:37 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 11:42:37 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 11:42:37 INFO  AbstractConnector:333 - Started ServerConnector@4b10a64d{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 11:42:38 INFO  Server:415 - Started @4503ms
+2025-09-25 11:56:56 INFO  log:170 - Logging initialized @3554ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 11:56:56 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 11:56:56 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 11:56:56 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 11:56:57 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 11:56:57 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 11:56:57 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 11:56:57 INFO  AbstractConnector:333 - Started ServerConnector@7f15aea9{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 11:56:57 INFO  Server:415 - Started @3678ms
+2025-09-25 12:23:14 INFO  log:170 - Logging initialized @3607ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 12:23:14 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 12:23:14 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 12:23:14 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 12:23:14 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 12:23:14 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 12:23:14 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 12:23:14 INFO  AbstractConnector:333 - Started ServerConnector@7f2a801{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 12:23:14 INFO  Server:415 - Started @3734ms
+2025-09-25 12:45:55 INFO  log:170 - Logging initialized @3523ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 12:45:55 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 12:45:55 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 12:45:55 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 12:45:55 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 12:45:55 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 12:45:55 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 12:45:55 INFO  AbstractConnector:333 - Started ServerConnector@7f2a801{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 12:45:55 INFO  Server:415 - Started @3646ms
+2025-09-25 12:53:54 INFO  MatcherFilter:167 - The requested route [/transactions/transfer] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 12:59:30 INFO  log:170 - Logging initialized @3401ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 12:59:30 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 12:59:30 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 12:59:30 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 12:59:30 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 12:59:30 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 12:59:30 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 12:59:30 INFO  AbstractConnector:333 - Started ServerConnector@35f22bd5{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 12:59:30 INFO  Server:415 - Started @3507ms
+2025-09-25 13:07:06 INFO  MatcherFilter:167 - The requested route [/customer] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 13:20:11 INFO  log:170 - Logging initialized @3679ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 13:20:11 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 13:20:11 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 13:20:11 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 13:20:11 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 13:20:11 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 13:20:11 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 13:20:11 INFO  AbstractConnector:333 - Started ServerConnector@5df47410{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 13:20:11 INFO  Server:415 - Started @3795ms
+2025-09-25 13:51:58 INFO  log:170 - Logging initialized @3494ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 13:51:58 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 13:51:58 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 13:51:58 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 13:51:58 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 13:51:58 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 13:51:58 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 13:51:58 INFO  AbstractConnector:333 - Started ServerConnector@7b5caec1{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 13:51:58 INFO  Server:415 - Started @3602ms
+2025-09-25 13:52:48 INFO  MatcherFilter:167 - The requested route [/customer] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 13:58:57 INFO  log:170 - Logging initialized @3484ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 13:58:57 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 13:58:57 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 13:58:57 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 13:58:57 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 13:58:57 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 13:58:57 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 13:58:57 INFO  AbstractConnector:333 - Started ServerConnector@7b5caec1{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 13:58:57 INFO  Server:415 - Started @3598ms
+2025-09-25 14:14:40 INFO  log:170 - Logging initialized @4434ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 14:14:40 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 14:14:40 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 14:14:40 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 14:14:40 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 14:14:40 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 14:14:40 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 14:14:40 INFO  AbstractConnector:333 - Started ServerConnector@4a709{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 14:14:40 INFO  Server:415 - Started @4581ms
+2025-09-25 19:48:42 INFO  log:170 - Logging initialized @4103ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 19:48:42 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 19:48:42 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 19:48:42 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 19:48:42 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 19:48:42 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 19:48:42 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 19:48:42 INFO  AbstractConnector:333 - Started ServerConnector@4a709{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 19:48:42 INFO  Server:415 - Started @4237ms
+2025-09-25 20:12:56 INFO  log:170 - Logging initialized @4664ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 20:12:56 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 20:12:56 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 20:12:56 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 20:12:56 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 20:12:56 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 20:12:56 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 20:12:56 INFO  AbstractConnector:333 - Started ServerConnector@39b92c7c{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 20:12:56 INFO  Server:415 - Started @4870ms
+2025-09-25 21:38:07 INFO  log:170 - Logging initialized @12070ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 21:38:07 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 21:38:07 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 21:38:07 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 21:38:07 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 21:38:07 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 21:38:07 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 21:38:07 INFO  AbstractConnector:333 - Started ServerConnector@774b15ed{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 21:38:07 INFO  Server:415 - Started @12389ms
+2025-09-25 22:18:16 INFO  MatcherFilter:167 - The requested route [/transactions/transferByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 22:20:53 INFO  MatcherFilter:167 - The requested route [/transactions/transferByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 22:20:55 INFO  MatcherFilter:167 - The requested route [/transactions/transferByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 22:24:19 INFO  log:170 - Logging initialized @9139ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 22:24:19 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 22:24:19 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 22:24:19 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 22:24:19 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 22:24:19 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 22:24:19 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-25 22:24:20 INFO  AbstractConnector:333 - Started ServerConnector@24864d52{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 22:24:20 INFO  Server:415 - Started @9410ms
+2025-09-25 23:06:14 INFO  log:170 - Logging initialized @4576ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-25 23:06:14 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-25 23:06:14 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-25 23:06:14 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-25 23:06:14 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-25 23:06:14 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-25 23:06:14 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-25 23:06:14 INFO  AbstractConnector:333 - Started ServerConnector@69be9c28{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2025-09-25 23:06:14 INFO  Server:415 - Started @4707ms
+2025-09-25 23:46:06 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 23:50:16 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 23:50:17 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 23:50:18 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 23:50:19 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 23:53:29 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 23:53:31 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-25 23:53:32 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-26 00:04:30 INFO  MatcherFilter:167 - The requested route [/transactions/depositWithdrawByCustomerId] has not been mapped in Spark for Accept: [*/*]
+2025-09-26 00:07:28 INFO  log:170 - Logging initialized @3783ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 00:07:28 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 00:07:28 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-26 00:07:28 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-26 00:07:28 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 00:07:28 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 00:07:28 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 00:07:28 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-26 00:07:43 INFO  log:170 - Logging initialized @3537ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 00:07:43 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 00:07:43 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8080
+2025-09-26 00:07:43 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-26 00:07:43 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 00:07:43 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 00:07:43 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 00:07:43 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-26 00:11:21 INFO  log:170 - Logging initialized @4680ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-26 00:11:21 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-26 00:11:21 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-26 00:11:21 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-26 00:11:21 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-26 00:11:21 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-26 00:11:21 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-26 00:11:21 ERROR Spark:94 - ignite failed
+java.io.IOException: Failed to bind to /0.0.0.0:8081
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:310) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:234) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:401) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at spark.embeddedserver.jetty.EmbeddedJettyServer.ignite(EmbeddedJettyServer.java:154) ~[spark-core-2.9.4.jar:?]
+	at spark.Service.lambda$init$2(Service.java:633) ~[spark-core-2.9.4.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.bind(Net.java:565) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	... 9 more
+2025-09-30 19:13:49 INFO  log:170 - Logging initialized @5407ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 19:13:49 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 19:13:49 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 19:13:49 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-30 19:13:49 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 19:13:49 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 19:13:49 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-30 19:13:49 INFO  AbstractConnector:333 - Started ServerConnector@6f45d31a{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 19:13:49 INFO  Server:415 - Started @5649ms
+2025-09-30 19:37:56 INFO  log:170 - Logging initialized @3637ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 19:37:56 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 19:37:56 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 19:37:56 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-30 19:37:56 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 19:37:56 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 19:37:56 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-30 19:37:56 INFO  AbstractConnector:333 - Started ServerConnector@6acc5f61{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 19:37:56 INFO  Server:415 - Started @3755ms
+2025-09-30 20:22:58 INFO  log:170 - Logging initialized @3815ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 20:22:58 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 20:22:58 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 20:22:58 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-30 20:22:58 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 20:22:58 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 20:22:58 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-30 20:22:58 INFO  AbstractConnector:333 - Started ServerConnector@67bb4f55{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 20:22:58 INFO  Server:415 - Started @3940ms
+2025-09-30 20:23:07 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+2025-09-30 20:26:24 INFO  log:170 - Logging initialized @3615ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 20:26:24 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 20:26:24 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 20:26:24 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-30 20:26:24 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 20:26:24 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 20:26:24 INFO  session:132 - node0 Scavenging every 660000ms
+2025-09-30 20:26:24 INFO  AbstractConnector:333 - Started ServerConnector@44641ae1{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 20:26:24 INFO  Server:415 - Started @3729ms
+2025-09-30 20:26:39 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+2025-09-30 20:31:09 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 32 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 32 more
+2025-09-30 20:41:42 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+2025-09-30 20:41:53 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 32 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 32 more
+2025-09-30 20:41:59 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+2025-09-30 20:43:51 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+2025-09-30 20:52:25 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 33 more
+2025-09-30 20:53:15 INFO  log:170 - Logging initialized @9449ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-09-30 20:53:15 INFO  EmbeddedJettyServer:147 - == Spark has ignited ...
+2025-09-30 20:53:15 INFO  EmbeddedJettyServer:151 - >> Listening on 0.0.0.0:8081
+2025-09-30 20:53:15 INFO  Server:375 - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 21.0.6+7-LTS
+2025-09-30 20:53:15 INFO  session:334 - DefaultSessionIdManager workerName=node0
+2025-09-30 20:53:15 INFO  session:339 - No SessionScavenger set, using defaults
+2025-09-30 20:53:15 INFO  session:132 - node0 Scavenging every 600000ms
+2025-09-30 20:53:15 INFO  AbstractConnector:333 - Started ServerConnector@313dd2b1{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+2025-09-30 20:53:15 INFO  Server:415 - Started @9792ms
+2025-09-30 20:57:30 ERROR GeneralError:55 - 
+com.google.gson.JsonSyntaxException: Failed parsing '725846400000' as Date; at path $.dob
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:90) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:75) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.read(DateTypeAdapter.java:46) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at com.banking.Main.lambda$main$3(Main.java:78) ~[classes/:?]
+	at spark.RouteImpl$1.handle(RouteImpl.java:72) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.Routes.execute(Routes.java:61) ~[spark-core-2.9.4.jar:?]
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:134) ~[spark-core-2.9.4.jar:?]
+	at spark.embeddedserver.jetty.JettyHandler.doHandle(JettyHandler.java:50) ~[spark-core-2.9.4.jar:?]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1598) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.48.v20220622.jar:9.4.48.v20220622]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.text.ParseException: Failed to parse date ["725846400000"]: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:279) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
+Caused by: java.lang.IndexOutOfBoundsException: Invalid time zone indicator '0'
+	at com.google.gson.internal.bind.util.ISO8601Utils.parse(ISO8601Utils.java:250) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.DateTypeAdapter.deserializeToDate(DateTypeAdapter.java:88) ~[gson-2.10.1.jar:?]
+	... 28 more
